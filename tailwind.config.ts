@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        6: "1.5rem", // Add this if you suspect it's missing
+        8: "2rem", // Add this if you suspect it's missing
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

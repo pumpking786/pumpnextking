@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 // import { motion } from "framer-motion";
 import Link from "next/link";
 const HeroSection = () => {
@@ -48,9 +50,43 @@ const HeroSection = () => {
             learning, and committed to making the world a more beautiful and
             better place.
           </p>
+          <div className="flex justify-center sm:justify-start space-x-8 mb-6">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-500"
+            >
+              <i className="fab fa-facebook-f text-3xl"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-500"
+            >
+              <i className="fab fa-instagram text-3xl"></i>
+            </a>
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-400"
+            >
+              <i className="fab fa-twitter text-3xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-600"
+            >
+              <i className="fab fa-linkedin-in text-3xl"></i>
+            </a>
+          </div>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
-              Hire me
+              About me
             </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 bg-transparent hover:bg-slate-800 text-white mt-3">
               Download CV

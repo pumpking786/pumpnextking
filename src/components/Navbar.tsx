@@ -30,7 +30,7 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-4xl text-white font-semibold"
         >
-          LOGO
+          PumpKing
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
