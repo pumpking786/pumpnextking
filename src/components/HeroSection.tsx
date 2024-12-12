@@ -8,6 +8,18 @@ const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
+        <div className="col-span-5 place-self-center mb-9 lg:mb-3 lg:mr-8 mr-8">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[350px] relative">
+            <Image
+              src="/images/ok.jpg"
+              alt="Profile"
+              className="rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-2"
+              width={400} // Match the parent container's width for large screens
+              height={350} // Match the parent container's height for large screens
+              objectFit="cover" // Ensures the image covers the circular area without distortion
+            />
+          </div>
+        </div>
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">
@@ -40,21 +52,9 @@ const HeroSection = () => {
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
               Hire me
             </button>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 bg-transparent hover:bg-slate-800 text-white mt-3">
               Download CV
             </button>
-          </div>
-        </div>
-        <div className="col-span-5 place-self-center mt-9 lg:mt-3 lg:ml-8 ml-3">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[350px] relative">
-            <Image
-              src="/images/ok.jpg"
-              alt="Profile"
-              className="rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-2"
-              width={400} // Match the parent container's width for large screens
-              height={350} // Match the parent container's height for large screens
-              objectFit="cover" // Ensures the image covers the circular area without distortion
-            />
           </div>
         </div>
       </div>
