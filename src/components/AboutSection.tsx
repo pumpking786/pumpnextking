@@ -2,42 +2,60 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
-
+const skills = [
+  { src: "/images/html.png", alt: "HTML Icon" },
+  { src: "/images/css.png", alt: "CSS Icon" },
+  { src: "/images/js.png", alt: "JavaScript Icon" },
+  { src: "/images/php.png", alt: "JavaScript Icon" },
+  { src: "/images/nodejs.png", alt: "React Icon" },
+  { src: "/images/react.png", alt: "React Icon" },
+  { src: "/images/nextjs.png", alt: "React Icon" },
+  { src: "/images/python.png", alt: "React Icon" },
+  { src: "/images/mongodb.png", alt: "MongoDB Icon" },
+  { src: "/images/mysql.png", alt: "MySQL Icon" },
+];
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+      <ul className="flex flex-wrap gap-7 justify-center ">
+        {skills.map((skill, index) => (
+          <li key={index} className="flex items-center">
+            <Image
+              src={skill.src}
+              alt={skill.alt}
+              width={80}
+              height={80}
+              className="w-14 h-14 sm:w-20 sm:h-20"
+            />
+          </li>
+        ))}
       </ul>
     ),
   },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
+  // {
+  //   title: "Education",
+  //   id: "education",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>Fullstack Academy of Code</li>
+  //       <li>University of California, Santa Cruz </li>
+  //       <li>University of California, Santa Cruz</li>
+  //     </ul>
+  //   ),
+  // },
+  // {
+  //   title: "Certifications",
+  //   id: "certifications",
+  //   content: (
+  //     <ul className="list-disc pl-2">
+  //       <li>AWS Cloud Practitioner</li>
+  //       <li>Google Professional Cloud Developer</li>
+  //       <li>Google Professional Cloud Developer</li>
+  //     </ul>
+  //   ),
+  // },
 ];
 
 const AboutSection = () => {
@@ -50,25 +68,27 @@ const AboutSection = () => {
   };
   const selectedTab = TAB_DATA.find((t) => t.id === tab);
   return (
-    <section className="text-white">
+    <section className="text-white mt-[22px]">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/skills.jpg"
           alt="Profile"
-          width={600}
-          height={600}
+          width={700}
+          height={700}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            interactive and responsive web applications. With experience in
+            HTML, CSS, JavaScript, php, Node.js, React, Nextjs, Python, Mongodb,
+            mysql and more, I enjoy building dynamic and responsive web
+            applications that provide an engaging user experience. I am a quick
+            learner and I am always looking to expand my knowledge and skill
+            set. I am a team player and I am excited to work with others to
+            create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="text-[20px] flex flex-row justify-center justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -76,20 +96,20 @@ const AboutSection = () => {
               {" "}
               Skills{" "}
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
               Education{" "}
-            </TabButton>
-            <TabButton
+            </TabButton> */}
+            {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
               {" "}
               Certifications{" "}
-            </TabButton>
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {" "}

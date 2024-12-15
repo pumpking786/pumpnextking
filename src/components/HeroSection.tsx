@@ -52,7 +52,7 @@ const HeroSection = () => {
           </p>
           <div className="flex justify-center sm:justify-start space-x-8 mb-6">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/maskey.amatya/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-500"
@@ -60,7 +60,7 @@ const HeroSection = () => {
               <i className="fab fa-facebook-f text-3xl"></i>
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/pramit252"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-pink-500"
@@ -68,15 +68,15 @@ const HeroSection = () => {
               <i className="fab fa-instagram text-3xl"></i>
             </a>
             <a
-              href="https://www.twitter.com/"
+              href="https://www.youtube.com/@ChesswithPramit"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-400"
             >
-              <i className="fab fa-twitter text-3xl"></i>
+              <i className="fab fa-youtube text-3xl"></i>
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/pramit-amatya-b03334283/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-600"

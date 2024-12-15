@@ -12,7 +12,10 @@ export default function Home() {
         </section>
 
         {/* AboutSection takes full screen height */}
-        <section className="min-h-screen flex items-center justify-center">
+        <section
+          id="about"
+          className="min-h-screen flex items-center justify-center"
+        >
           <AboutSection />
         </section>
       </div>
