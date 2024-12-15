@@ -11,7 +11,7 @@ const HeroSection = () => {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-5 place-self-center mb-9 lg:mb-3 lg:mr-8 mr-8">
-          <div className="rounded-full bg-[#181818] mt-[25px] w-[250px] h-[260px] lg:w-[400px] lg:h-[350px] relative">
+          <div className="rounded-full bg-[#181818] mt-[25px] w-[260px] h-[280px] lg:w-[400px] lg:h-[350px] relative">
             <Image
               src="/images/ok.jpg"
               alt="Profile"
@@ -45,7 +45,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="text-[#ADB7BE] text-base sm:text-lg mt-3 mb-6 lg:text-xl">
             Thriving to become the best, driven by a passion for continuous
             learning, and committed to making the world a more beautiful and
             better place.
