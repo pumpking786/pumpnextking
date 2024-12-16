@@ -15,13 +15,13 @@ export default function Home() {
         {/* AboutSection takes full screen height */}
         <section
           id="about"
-          className="min-h-screen flex items-center justify-center"
+          className="min-h-screen flex items-center justify-center scroll-mt-5"
         >
           <AboutSection />
         </section>
         <section
           id="projects"
-          className="min-h-screen items-center justify-center"
+          className="min-h-screen items-center justify-center scroll-mt-20"
         >
           <ProjectsSection />
         </section>
