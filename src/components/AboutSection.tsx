@@ -88,14 +88,14 @@ const AboutSection = () => {
             set. I am a team player and I am excited to work with others to
             create amazing applications.
           </p>
-          <div className="text-[20px] flex flex-row justify-center justify-start mt-8">
-            <TabButton
+          <div className="text-[20px] flex flex-row justify-center justify-start mt-4">
+            {/* <TabButton 
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
               {" "}
               Skills{" "}
-            </TabButton>
+            </TabButton> */}
             {/* <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
@@ -114,6 +114,11 @@ const AboutSection = () => {
           <div className="mt-8">
             {" "}
             {selectedTab?.content || <div>No content available</div>}
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-8 mx-auto block">
+              <a href="/resume/cv.pdf" download="PumpKingCV.pdf">
+                Download CV
+              </a>
+            </button>
           </div>
         </div>
       </div>
