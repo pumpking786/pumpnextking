@@ -68,7 +68,7 @@ const HeroSection = () => {
               <i className="fab fa-instagram text-3xl"></i>
             </a>
             <a
-              href="https://www.youtube.com/@ChesswithPramit"
+              href="https://www.youtube.com/@PramitAmatya"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-400"
