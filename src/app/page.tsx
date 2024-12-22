@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212] ">
@@ -24,6 +25,12 @@ export default function Home() {
           className="min-h-screen items-center justify-center scroll-mt-20"
         >
           <ProjectsSection />
+        </section>
+        <section
+          id="contact"
+          className="min-h-screen items-center justify-center scroll-mt-20"
+        >
+          <ContactSection />
         </section>
       </div>
     </main>

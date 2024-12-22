@@ -51,38 +51,89 @@ const HeroSection = () => {
             better place.
           </p>
           <div className="flex justify-center sm:justify-start space-x-8 mb-6">
-            <a
-              href="https://www.facebook.com/maskey.amatya/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-500"
-            >
-              <i className="fab fa-facebook-f text-3xl"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/pramit252"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-pink-500"
-            >
-              <i className="fab fa-instagram text-3xl"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/@PramitAmatya"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-400"
-            >
-              <i className="fab fa-youtube text-3xl"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/pramit-amatya-b03334283/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-600"
-            >
-              <i className="fab fa-linkedin-in text-3xl"></i>
-            </a>
+            <div className="relative group">
+              <a
+                href="https://www.facebook.com/maskey.amatya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-500"
+              >
+                <i className="fab fa-facebook-f text-3xl"></i>
+              </a>
+              <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                Facebook
+              </span>
+            </div>
+
+            <div className="relative group">
+              <a
+                href="https://www.instagram.com/pramit252"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-pink-500"
+              >
+                <i className="fab fa-instagram text-3xl"></i>
+              </a>
+              <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                Instagram
+              </span>
+            </div>
+
+            {/* <div className="relative group">
+              <a
+                href="https://www.youtube.com/@PramitAmatya"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-red-400"
+              >
+                <i className="fab fa-youtube text-3xl"></i>
+              </a>
+              <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                Pramit Amatya
+              </span>
+            </div>
+
+            <div className="relative group">
+              <a
+                href="https://www.youtube.com/@ChesswithPramit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-red-400"
+              >
+                <i className="fab fa-youtube text-3xl"></i>
+              </a>
+              <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                ChesswithPramit
+              </span>
+            </div> */}
+
+            <div className="relative group">
+              <a
+                href="https://github.com/pumpking786"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-200"
+              >
+                <i className="fab fa-github text-3xl"></i>
+              </a>
+              <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                Github
+              </span>
+            </div>
+
+            <div className="relative group">
+              <a
+                href="https://www.linkedin.com/in/pramit-amatya-b03334283/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-600"
+              >
+                <i className="fab fa-linkedin-in text-3xl"></i>
+              </a>
+              <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                LinkedIn
+              </span>
+            </div>
           </div>
           <div>
             <button
@@ -97,7 +148,7 @@ const HeroSection = () => {
               About me
             </button>
             <button
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white"
+              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white mt-2"
               onClick={() => {
                 const projectSection = document.getElementById("projects");
                 if (projectSection) {
