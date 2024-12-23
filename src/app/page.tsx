@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
+export const runtime = "edge";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212] ">
