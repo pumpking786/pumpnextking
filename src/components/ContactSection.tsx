@@ -6,7 +6,7 @@ const ContactSection = () => {
     <div>
       <section
         id="contact"
-        className=" from-blue-500 via-purple-500 to-pink-500 text-white py-10 px-8"
+        className=" from-blue-500 via-purple-500 to-pink-500 text-white py-10 px-8 "
       >
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>

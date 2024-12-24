@@ -11,7 +11,7 @@ const HeroSection = () => {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-5 place-self-center mb-9 lg:mb-3 lg:mr-8 mr-8">
-          <div className="rounded-full bg-[#181818] mt-[25px] w-[260px] h-[280px] lg:w-[400px] lg:h-[350px] relative">
+          <div className="rounded-full bg-[#181818] mt-[25px] w-[270px] h-[280px] lg:w-[400px] lg:h-[350px] relative">
             <Image
               src="/images/ok.jpg"
               alt="Profile"

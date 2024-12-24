@@ -9,7 +9,7 @@ const projectsData = [
     description:
       "Rock Paper Scissors is a simple web-based game built using HTML, CSS, and JavaScript.",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Web", "Mobile"],
 
     gitUrl: "https://github.com/pumpking786/rps",
     previewUrl: "https://pumpking786.github.io/rps/",

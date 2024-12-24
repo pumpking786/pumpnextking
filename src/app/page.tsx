@@ -29,7 +29,7 @@ export default function Home() {
         </section>
         <section
           id="contact"
-          className="min-h-screen items-center justify-center scroll-mt-20"
+          className="min-h-screen items-center justify-center scroll-mt-4 sm:scroll-mt-20 md:scroll-mt-20"
         >
           <ContactSection />
         </section>
