@@ -21,18 +21,18 @@ const projectsData = [
       "Tic Tac Toe is a simple web-based game built using HTML, CSS, and JavaScript.",
     image: "/images/projects/2.png",
     tag: ["All", "Web", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/pumpking786/tic-tac-toe",
+    previewUrl: "https://pumpking786.github.io/tic-tac-toe/",
   },
-  {
-    id: 3,
-    title: "E-commerce Website",
-    description: "This is a e-commerce website built using html,css, js",
-    image: "/images/projects/3.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 3,
+  //   title: "E-commerce Website",
+  //   description: "This is a e-commerce website built using html,css, js",
+  //   image: "/images/projects/3.png",
+  //   tag: ["All", "Mobile"],
+  //   gitUrl: "",
+  //   previewUrl: "",
+  // },
 ];
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
