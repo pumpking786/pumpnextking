@@ -8,14 +8,19 @@ interface LinkItem {
 
 interface MenuOverlayProps {
   links: LinkItem[];
+  closeSidebar: () => void; // Accept closeSidebar as a prop
 }
 
-const MenuOverlay: React.FC<MenuOverlayProps> = ({ links }) => {
+const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, closeSidebar }) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
         <li key={index}>
-          <NavLink href={link.path} title={link.title} />
+          <NavLink
+            href={link.path}
+            title={link.title}
+            closeSidebar={closeSidebar} // Pass closeSidebar to NavLink
+          />
         </li>
       ))}
     </ul>
