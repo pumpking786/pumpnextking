@@ -14,8 +14,9 @@ const ContactSection = () => {
             Have a question or want to work together? Feel free to reach out!
           </p>
           <form
-            action="https://formspree.io/f/{your_form_id}" // Replace with your Formspree endpoint or API
+            action="https://getform.io/f/7b177aff-de5a-491c-b179-f418a6cb6725" // Getform endpoint
             method="POST"
+            encType="multipart/form-data" // Correct attribute name for enctype
             className="grid grid-cols-1 gap-6 max-w-xl mx-auto"
           >
             <input
@@ -69,7 +70,7 @@ const ContactSection = () => {
                 href="https://www.instagram.com/pramit252"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-4xl lg:text-5xl hover:text-pink-600 transition duration-300"
+                className="text-3xl lg:text-4xl hover:text-pink-600 transition duration-300"
               >
                 <i className="fab fa-instagram"></i>
               </a>
@@ -84,7 +85,7 @@ const ContactSection = () => {
                 href="https://www.youtube.com/@PramitAmatya"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-4xl lg:text-5xl hover:text-red-600 transition duration-300"
+                className="text-3xl lg:text-4xl hover:text-red-600 transition duration-300"
               >
                 <i className="fab fa-youtube"></i>
               </a>
@@ -98,7 +99,7 @@ const ContactSection = () => {
                 href="https://www.youtube.com/@ChesswithPramit"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-4xl lg:text-5xl hover:text-red-600 transition duration-300"
+                className="text-3xl lg:text-4xl hover:text-red-600 transition duration-300"
               >
                 <i className="fab fa-youtube"></i>
               </a>
@@ -113,7 +114,7 @@ const ContactSection = () => {
                 href="https://github.com/pumpking786"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-4xl lg:text-5xl hover:text-blue-200 transition duration-300"
+                className="text-3xl lg:text-4xl hover:text-blue-200 transition duration-300"
               >
                 <i className="fab fa-github"></i>
               </a>
@@ -128,7 +129,7 @@ const ContactSection = () => {
                 href="https://www.linkedin.com/in/pramit-amatya-b03334283/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-4xl lg:text-5xl hover:text-blue-400 transition duration-300"
+                className="text-3xl lg:text-4xl hover:text-blue-400 transition duration-300"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
