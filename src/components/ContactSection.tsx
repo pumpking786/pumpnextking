@@ -1,12 +1,49 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 const ContactSection = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSent, setIsSent] = useState(false); // State to track the button color change
+
+  useEffect(() => {
+    if (formRef.current) {
+      formRef.current.reset(); // Clear form inputs on component mount
+    }
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent default form submission
+
+    const form = formRef.current;
+    if (form) {
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+        });
+
+        if (response.ok) {
+          setIsSent(true); // Set the button color to green
+          form.reset(); // Clear form inputs after successful submission
+
+          // Reset the button color after 2 seconds
+          setTimeout(() => setIsSent(false), 2000);
+        } else {
+          console.error("Form submission failed");
+        }
+      } catch (error) {
+        console.error("Form submission error:", error);
+      }
+    }
+  };
+
   return (
     <div>
       <section
         id="contact"
-        className=" from-blue-500 via-purple-500 to-pink-500 text-white py-10 px-8 "
+        className="from-blue-500 via-purple-500 to-pink-500 text-white py-10 px-8"
       >
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
@@ -14,10 +51,12 @@ const ContactSection = () => {
             Have a question or want to work together? Feel free to reach out!
           </p>
           <form
-            action="https://getform.io/f/7b177aff-de5a-491c-b179-f418a6cb6725" // Getform endpoint
+            ref={formRef}
+            action="https://getform.io/f/7b177aff-de5a-491c-b179-f418a6cb6725"
             method="POST"
-            encType="multipart/form-data" // Correct attribute name for enctype
+            encType="multipart/form-data"
             className="grid grid-cols-1 gap-6 max-w-xl mx-auto"
+            onSubmit={handleSubmit}
           >
             <input
               type="text"
@@ -42,9 +81,13 @@ const ContactSection = () => {
             ></textarea>
             <button
               type="submit"
-              className="px-6 py-3 rounded-full bg-white text-blue-600 font-semibold hover:bg-blue-600 hover:text-white transition duration-300"
+              className={`px-6 py-3 rounded-full font-semibold transition duration-300 ${
+                isSent
+                  ? "bg-green-500 text-white"
+                  : "bg-white text-blue-600 hover:bg-blue-600 hover:text-white"
+              }`}
             >
-              Send Message
+              {isSent ? "Message Sent" : "Send Message"}
             </button>
           </form>
           {/* Social Media Icons */}

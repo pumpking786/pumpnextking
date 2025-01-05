@@ -91,7 +91,7 @@ const HeroSection = () => {
               <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
                 Pramit Amatya
               </span>
-            </div>
+            </div> */}
 
             <div className="relative group">
               <a
@@ -103,11 +103,11 @@ const HeroSection = () => {
                 <i className="fab fa-youtube text-3xl"></i>
               </a>
               <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
-                ChesswithPramit
+                Youtube
               </span>
-            </div> */}
+            </div>
 
-            <div className="relative group">
+            {/* <div className="relative group">
               <a
                 href="https://github.com/pumpking786"
                 target="_blank"
@@ -119,7 +119,7 @@ const HeroSection = () => {
               <span className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-sm bg-black text-white py-1 px-3 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
                 Github
               </span>
-            </div>
+            </div> */}
 
             <div className="relative group">
               <a
