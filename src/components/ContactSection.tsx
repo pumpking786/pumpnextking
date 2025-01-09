@@ -350,7 +350,7 @@ export default ContactSection;
 //               </span>
 //             </div>
 
-//             {/* GitHub */}
+//             {/* GitHubs */}
 //             <div className="relative group mb-4 sm:mb-0">
 //               <a
 //                 href="https://github.com/pumpking786"
