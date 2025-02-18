@@ -16,23 +16,24 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Currency Converter",
+    description:
+      "This is a currency converter webpage built using vite in react.",
+    image: "/images/projects/2.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/pumpking786/Currency-Converter",
+    previewUrl: "https://currency-converter-sable-seven.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Tic Tac Toe",
     description:
       "Tic Tac Toe is a simple web-based game built using HTML, CSS, and JavaScript.",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web", "Mobile"],
+    image: "/images/projects/3.png",
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/pumpking786/tic-tac-toe",
     previewUrl: "https://pumpking786.github.io/tic-tac-toe/",
   },
-  // {
-  //   id: 3,
-  //   title: "E-commerce Website",
-  //   description: "This is a e-commerce website built using html,css, js",
-  //   image: "/images/projects/3.png",
-  //   tag: ["All", "Mobile"],
-  //   gitUrl: "",
-  //   previewUrl: "",
-  // },
 ];
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
